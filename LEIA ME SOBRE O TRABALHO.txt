@@ -1,0 +1,21 @@
+
+
+Projeto próprio
+O trabalho final será realizado em grupos de 3 ou 4 pessoas (não será permitido o desenvolvimento individual). Deve ser usada uma das linguagens mostradas na disciplina. Nele a equipe terá que desenvolver um software que julgar interessante. Pode ser software distribuído, jogo, etc. A definição do software deve ser feita até o dia 06/12 (fale com o professor) e envie para o email (rafaelberri@gmail.com) o nome do software e a equipe. As equipes serão colocadas no ** link ** após a confirmação do professor.
+O software desenvolvido pela equipe será apresentado para a turma no dia 18/12. Dia 18/12 deve ser entregue um pequeno relatório contendo as principais funcionalidades do software escolhido e a justificativa da linguagem escolhida para o desenvolvimento.
+Status de envio
+Status de envio	Nenhuma tentativa
+Status da avaliação	Não há notas
+Data de entrega	segunda, 18 dez 2023, 23:59
+
+
+
+------------------------------------- SOBRE O PROJEO ----------------------------------------------------
+
+A solução proposta pelos alunos foi desenvolver uma aplicação web para gerenciar as chaves dos laboratórios e salas do C3, usando um sistema de verificação com a linguagem Go para o backend. Já no frontend, vamos utilizar o Bootstrap, e no banco de dados SQL. Para essa solução, vamos nos guiar pelos conceitos de orientação a objetos, acesso a banco de dados, e também iremos utilizar o conceito de modularização MVC.
+
+Escolhemos a linguagem Go por estar ganhando espaço no mercado, também por causa de todos os seus pacotes e as diversas soluções e ferramentas disponíveis, incluindo uma documentação clara e de fácil aplicação. A linguagem é bastante legível e fácil de escrever seus argumentos e sintaxe. Como é uma aplicação web, tivemos a necessidade de utilizar HTML5, Bootstrap no design, e o banco de dados SQL.
+
+Nossa aplicação cadastra salas, deleta e edita também. Podemos criar novos usuários e deletá-los. Na página de check-in, a solução retorna a primeira sala da lista de salas. Gostaríamos de deixar o projeto mais robusto e funcional. Este é apenas um MVP para um possível projeto maior e mais completo. É com imenso prazer que finalizamos este projeto por aqui e agradecemos todo conhecimento que nos foi passado neste semestre bem aproveitado. Um forte abraço, professor.
+
+

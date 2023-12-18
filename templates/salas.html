@@ -1,0 +1,79 @@
+{{define "Salas"}}
+
+
+{{template "_head"}}
+
+{{template "_navbar"}}
+
+<body>
+   
+    <div class="container-responsive container">
+        <section class="card">
+            <div class="container">
+                <table class="table table-striped table-hover mb-0 table-responsive">
+                    <thead>
+                        <tr>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5nKPqxFr9HHbEMjB46D4KkKtlrhsSM4h0WQ&usqp=CAU" alt="logo c3" width="55" height="50"></td>
+                            <td><h3 class="text-justify">Salas</h3></td>
+                            <td><a  href="/new" class="btn btn-primary mb-10">Nova sala</a></td>
+                            <!-- <td><a  class="btn btn-primary" href="/newuser">Novo user</a></td> -->
+                            <td></td>
+                            <td></td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <th>Prédio</th>
+                            <th>Descrição</th>
+                            <th>Numero de sala</th>
+                            <th>Chaves disponiveis</th>
+                            <th></th>
+                            <th></th>
+                            
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                        {{range .}}
+                        
+                        <tr>
+                            <td>{{.Nome}}</td>
+                            <td>{{.Descricao}}</td>
+                            <td>{{.Preco}}</td>
+                            <td>{{.Quantidade}}</td>
+                            <td><a href="/deletaproduto?id={{.Id}}" class="btn btn-danger">Delete</a></td>
+                            <td><a href="edit?id={{.Id}}" class="btn btn-info">Editar</a></td>
+                            
+                            <!-- BUTTON ESTA COM PROBLEMA DESCOBIRI QUAL É -->
+                            <!-- <td><button onclick="onDelete('{{.Id}}')"class="btn btn-danger">Deletar</button></td> -->
+                        </tr>
+                        
+                        {{end}}
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+    </div>
+
+    {{template "_footer"}}
+
+</body>
+<script>
+    function onDelete(id) {
+        let resposta = confirm("Tem certeza que vais deletar?")
+        if (resposta){
+            window.location = "/delete?id=" + id 
+        }
+    }
+</script>
+</html>
+{{end}}

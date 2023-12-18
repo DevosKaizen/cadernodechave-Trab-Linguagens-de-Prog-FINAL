@@ -1,0 +1,40 @@
+{{define "Pegarchave"}}
+
+
+{{template "_head"}}
+
+{{template "_navbarhome"}}
+
+<body>
+   
+  <div class="container-sm-5 text-center">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <form method="post" action="/checkin">
+                <div class="row mb-3">
+                  <label for="usaname" class="col-sm-1 col-form-label">Credenciais</label>
+                    <div class="col-sm-1">
+                        <input type="text" class="form-control" name="username" required>
+                        <div><p></p></div>
+                        <button class="btn btn-primary" type="submit">Entrar</button>
+                    </div>
+                    
+                    <div class="col"><div><p></p></div><img src="https://i0.wp.com/www.pebsp.com/wp-content/uploads/2023/02/Especializacoes-FURG-EAD.jpg?fit=1920%2C1080&ssl=1" alt="logo c3" width="300" height="250" class="img-fluid"></div>
+                    <label for="usaname" class="col-sm-1 col-form-label">Credenciais</label>
+                            <div class="col-sm-1">
+                                <input type="text" class="form-control" name="username">
+                                <div><p></p></div>
+                                <button class="btn btn-danger" type="submit">Sair</button>
+                            </div>
+                </div>
+            </form>
+          </div>
+        </div>
+               
+    {{template "_footer"}}
+
+</body>
+<script>
+    
+</script>
+</html>
+{{end}}

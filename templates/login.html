@@ -1,0 +1,78 @@
+{{define "Login"}}
+
+
+{{template "_head"}}
+
+{{template "_navbarhome"}}
+
+<body>
+    <div class="shadow-lg p-3 mb-5 bg-white rounded">
+    <div class="container">
+        <div class="row">
+          <div class="col"><img src="https://i.ytimg.com/vi/1rxLX9fyUhg/maxresdefault.jpg" class="img-fluid" alt="Imagem c3"></div>
+          <div class="col">
+            
+            <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <form method="post" action="/login">
+                <div class="row mb-3">
+                    <label for="usaname" class="col-sm-2 col-form-label">Credenciais</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="username" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                        <label for="password" class="col-sm-2 col-form-label">Senha</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" name="password" required>
+                    </div>
+                </div>
+                                
+                <div class="row mb-3">
+                        <div class="col-sm-10 offset-sm-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                Salvar dados
+                                </label>
+                            </div>
+                    </div>
+                </div>
+                <!-- <a class="btn btn-primary" href="salas" role="button">Login</a> -->
+                <button class="btn btn-primary" type="submit">Entrar</button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+      </div>
+
+      <!-- <div class="container">
+        <h2>Login</h2>
+    <form method="post" action="/login">
+        <label for="username">Usuário:</label>
+        <input type="text" name="username" required><br>
+        
+        <label for="password">Senha:</label>
+        <input type="password" name="password" required><br>
+        
+        <button type="submit">Entrar</button>
+    </form>
+      </div> -->
+
+
+
+
+
+    <div class="container"> 
+        
+        <div class="col-form-label">
+            
+            {{template "_footer"}}
+        </div>           
+    </div>
+</body>
+<script>
+    
+</script>
+</html>
+{{end}}
